@@ -2,12 +2,15 @@ body {
   margin: 0;
   max-width: 100%;
 }
+
+/* HEADER */
 .sec-1 {
   text-align: center;
   z-index: -2;
   position: relative;
-  background-color: #f5b971;
-  min-height: 35rem;
+  background-image: linear-gradient(to bottom,#fdd998, #f5b971);
+  /* background-color: #f5b971; */
+  min-height: 41rem;
   font-family: "Asap", sans-serif;
   overflow: hidden;
 }
@@ -22,7 +25,7 @@ body {
   z-index: 2;
 }
 .sec-1 h6 {
-  color: #facb88;
+  color: #e0ad4d;
   font-size: 2rem;
   margin: 10px auto;
   z-index: 2;
@@ -32,9 +35,10 @@ body {
   width: 75%;
 }
 .shoe1 {
-  top: -20%;
+  top: -25%;
   left: -25%;
   transform: rotate(-50deg);
+  
 }
 .shoe2 {
   right: -25%;
@@ -47,7 +51,7 @@ a {
 .shopping-button {
   display: inline-block;
   margin: 15px auto;
-  background-color: #facb88;
+  background-color: #fdd998;
   color: #f5b971;
   border: 0;
   padding: 8px;
@@ -58,6 +62,34 @@ a {
 .shopping-button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* PRODUCT DESC */
+
+.sec-2{
+    background-color: #f5b971;
+    overflow: hidden;
+}
+.product-desc-row {
+ background-color: #fdd998;
+    margin: 150px auto;
+   text-align: center;
+   padding: 50px;
+   border-radius: 5px;
+}
+.product-desc-card i{
+font-size: 7rem;
+color: #aa732f;
+}
+.product-desc-card h2 {
+    margin: 25px auto;
+    color: #f5b971;
+}
+.product-desc-card p {
+    color: #474747;
+}
+
+
+
 
 @media (max-width: 1100px) {
   .sec-1 {
