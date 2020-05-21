@@ -4,67 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kool Shoes</title>
+    <title>Thatcher Industries</title>
+
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Lobster&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Asap&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/8a1bd87446.js" crossorigin="anonymous"></script>
-
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
+
+    <nav>
+        <div class="dropdown">
+            <button><a class="home" href="index.html">About</a>
+            </button>
+
+            <a class="logo" href="index.html">Thatcher Industries</a>
+
+            <div class="services">
+                <button class="droptdown-button">Services <i class="arrow-icon fas fa-caret-up"></i></button>
+                <ul class="dropdown-list">
+                    <li><a href="#">Rabbits</a></li>
+                    <li><a href="#">Produce</a></li>
+                    <li><a href="#">Ponies</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="section-title">Our Products...</h1>
+
     <div class="sec-1">
-        <img class="shoe1" src="IMG_2059.PNG" alt="shoe2-img">
-        <h1>Kool Shoes.</h1>
-        <h6>(shoes, but kooler)</h6>
-        <img class="shoe2" src="IMG_2058.PNG" alt="shoe1-img">
-        <!-- <a href="shopping.html">
-            <h5 class="shopping-button">Go Shopping</h5>
-        </a> -->
+
+        <div class="info-card">
+            <img src="images/shape.png" alt="rabbit">
+            <h2>Produce</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua.</p>
+        </div>
+        <div class="info-card">
+            <img src="images/bunny.png" alt="rabbit">
+            <h2>Rabbits</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna
+                aliqua.</p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/pony.png" alt="rabbit">
+            <h2>Ponies</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna
+                aliqua.</p>
+        </div>
     </div>
 
     <div class="sec-2">
-        <div class="container">
-            <div class="row product-desc-row">
-                <div class="product-desc-card col-md-4">
-                    <i class="fas fa-running"></i>
-                    <h2>Overengineered</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna
-                        aliqua. Et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
-                </div>
 
-                <div class="product-desc-card col-md-4">
-                    <i class="fas fa-clock"></i>
-                    <h2>Long-lasting</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore
-                        magna
-                        aliqua. Et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active testimonial">
+                    <h3><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Vitae tempus quam pellentesque nec nam aliquam sem et. Mauris cursus mattis molestie
+                        a. <i class="fas fa-quote-right"></i></h3>
+                    <h2>-Person Quoted</h2>
                 </div>
-
-                <div class="product-desc-card col-md-4">
-                    <i class="fas fa-palette"></i>
-                    <h2>Ten Colors</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore
-                        magna
-                        aliqua. Et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
+                <div class="carousel-item testimonial">
+                    <h3><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Vitae tempus quam pellentesque nec nam aliquam sem et. Mauris cursus mattis molestie
+                        a. <i class="fas fa-quote-right"></i></h3>
+                    <h2>-Person Quoted</h2>
+                </div>
+                <div class="carousel-item testimonial">
+                    <h3><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Vitae tempus quam pellentesque nec nam aliquam sem et. Mauris cursus mattis molestie
+                        a. <i class="fas fa-quote-right"></i></h3>
+                    <h2>-Person Quoted</h2>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
     </div>
+
+    <h1 class="section-title">Explore...</h1>
+
+    <div class="sec-3">
+
+
+        <button class="explore-button"><a href="#">Produce</a></button>
+        <button class="explore-button"><a href="#">Rabbits</a></button>
+        <button class="explore-button"><a href="#">Ponies</a></button>
+    </div>
+
+    <div class="footer">
+        <a href="https//twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https//facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https//instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:david.a.thatcher@icloud.com"><i class="fas fa-envelope"></i></a>
+        <p>© Copyright 2018 Thatcher Industries</p>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
